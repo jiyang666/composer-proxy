@@ -27,8 +27,8 @@ jobs:
       - name: Pull Composer
         run: |
           cd src/biz-skeleton
-          composer update
+          composer update -oW --ignore-platform-reqs
       - name: Build Composer
         run: |
-          composer install
+          composer install -o
           php main.php
