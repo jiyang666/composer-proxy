@@ -27,7 +27,7 @@ jobs:
       - name: Pull Composer
         run: |
           cd src/biz-skeleton
-          composer install -o
+          composer update
       - name: Build Composer
         run: |
           composer install -o
